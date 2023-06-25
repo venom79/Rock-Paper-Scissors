@@ -9,6 +9,7 @@
     text-align: center;
     color: orange;
     font-family: "Baloo Bhai" , "cursive";
+    text-shadow: 2px 2px 15px yellow;
 }
 #gameName h1{
     padding: 20px;
