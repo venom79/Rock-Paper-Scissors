@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1140px)" href="./phone.css">
+    <title>Rock Papper Scissors</title>
+</head>
+
+<body>
+    <div id="gameName">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div id="scordDisplay">
+        <div class="scoreBox" id="player">
+            <div id="playerScore">
+                <h3 class="scoreCount">0</h3>
+            </div>
+            <h3 class="player">player</h3>
+        </div>
+        <div class="scoreBox" id="computer">
+            <h3 class="player">computer</h3>
+            <div id="computerScore">
+                <h3 class="scoreCount">0</h3>
+            </div>
+        </div>
+    </div>
+    <section id="GameDisplay">
+        <section id="gamePlay">
+            <div id="choices">
+                <button id="rock" class="btn btn-primary">Rock</button>
+                <button id="paper" class="btn btn-primary">Paper</button>
+                <button id="scissors" class="btn btn-primary">Scissor</button>
+            </div>
+            <div id="choiceDisplay">
+                <div id="playerChoice" class="display"></div>
+                <h1>Vs</h1>
+                <div id="computerChoice" class="display"></div>
+            </div>
+            <div id="result"></div>
+            <div>
+                <button class="btn btn-primary" id="reset">Reset</button>
+                <button class="btn btn-primary" id="history">History</button>
+            </div>
+        </section>
+        <section id="tableSec">
+            <table class="scoreTable unvisible" id="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Computer</th>
+                    <th>Winner</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+        </section>
+    </section>
+
+</body>
+<script src="./gameBrain.js"></script>
+</html>
